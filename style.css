@@ -51,6 +51,9 @@ body{
     color: var(--dark-color);
     background-color: var(--white-color);
 }
+header{
+    background-color: #F0EEE6;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -111,6 +114,7 @@ h4{
 }
 .column .row{
     padding: 0 0.938em;
+    background-color: white;
 }
 .flexwrap{
     display: flex;
@@ -156,6 +160,7 @@ h4{
 
 .mobile-hide{
     display: none;
+    
 
 }
 
@@ -213,73 +218,17 @@ h4{
     font-size: var(--font-small);
     color: var(--light-text-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :where(.off-canvas, header) li > a{
     display: flex;
     position: relative;
     line-height: inherit;
     transition: var(--trans-color);
+    font-size: 18px;
 }
+.header-top{
+    padding: 30px 0 0 0;
 
-
-
-
-
-
+}
 .header-top .wrapper{
     font-size: var(--font-small);
     font-weight: var(--fw3);
@@ -415,7 +364,7 @@ nav .fly-item,
 .header-main{
     background-color: var(--secondary-dark-color);
     padding: 1.5em 0;
-    margin-bottom: 2em;
+
 }
 .dpt-cat{
     position: relative;
@@ -615,17 +564,17 @@ form.search button:hover{
     border: 1px solid var(--border-color);
     line-height: 16px;
     margin: 0 0,5em 0;
+    font-size: 16px;
 
 }
 
 
 /*02 slider*/
-.slider .container{
-    height: 30rem;
-}
 .slider .item{
-    position: relative;
-    height: 474px;
+    height: 200px;
+}
+.swiper-slide{
+    padding: 30px 0 0 0;
 }
 .slider .item::before{
     content: '';
@@ -643,7 +592,7 @@ form.search button:hover{
     position: relative;
     padding: 0 0 10% 10%;
     z-index: 1;
-    top: -15em;
+   
 }
 .slider h4{
     font-size: var(--font-small);
@@ -680,18 +629,15 @@ form.search button:hover{
     opacity: 1;
 
 }
-
-
-
-
-
-
-
 .sectop{
     position: relative;
     padding-bottom: 0.5em;
     margin-bottom: 2em;
     border-bottom: 1px solid var(--border-color);
+    justify-content: space-between;
+}
+main{
+    background-color: #F0EEE6;
 }
 .sectop h2{
     position: relative;
@@ -704,15 +650,7 @@ form.search button:hover{
 .sectop h2 .circle{
     top: -5px;
 }
-
-
-
-
-
-
 /*04 products*/
-
-
 .products .offer{
     text-align: center;
     margin-bottom: 1.5em;
@@ -759,6 +697,7 @@ form.search button:hover{
 }
 .products.mini .item{
     margin-bottom: 2em;
+    border: 1px solid var(--border-color);
 }
 .products.mini .media{
     width: 130px;
@@ -908,6 +847,7 @@ form.search button:hover{
     flex: 0 0 100%;
     padding: 0 0.938em;
     padding-bottom: 2em;
+    background-color: white;
 }
 .products.main .media{
     height: 390px;
@@ -990,11 +930,6 @@ form.search button:hover{
 .mini-links li a:hover{
     text-decoration: underline;
 }
-
-
-
-
-
 /* 05 FOOTHER
 NEWS LETTER */
 .newsletter{
