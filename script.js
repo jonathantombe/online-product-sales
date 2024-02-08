@@ -138,5 +138,15 @@ document.querySelector('.modalclose').addEventListener('click', function () {
     document.querySelector('.site').classList.remove('showmodal')
 })
 
+//corazon Product
+const whistlistBtn = document.querySelectorAll("[data-whishlist-btn]");
+
+for (let i = 0; i < whistlistBtn.length; i++) {
+
+    whistlistBtn[i].addEventListener("click", function () {
+        elemToggleFunc(this);
+    });
+}
+
 
 
